@@ -91,7 +91,7 @@ SendButton.addEventListener("click", (ev) => {
         return 
     }
     Product.innerText = `
-    The carbon footprint you're business has is ${final} tons, of CO2.
+    The carbon footprint your business has is ${final} tons, of CO2.
     We have some very, very positive comments for you!
     ---
     ${f()}
