@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "name": "powerhouse",
+  "version": "0.0.0",
+  "description": "KAKAROT YOU FILTHY MONKEY",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frzct/Powerhouse.git"
+  },
+  "keywords": [
+    "kwargs",
+    "goon"
+  ],
+  "author": "The Arbiters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frzct/Powerhouse/issues"
+  },
+  "homepage": "https://github.com/Frzct/Powerhouse#readme"
+}
