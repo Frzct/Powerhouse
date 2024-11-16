@@ -4,6 +4,8 @@ const inputObject2 = document.getElementById("input2")
 const SendButton = document.getElementById("dominance")
 const Product = document.getElementById("product")
 
+const inputted1 = document.getElementById("Inputted1")
+const inputted2 = document.getElementById("Inputted2")
 const Answers = {
 
 }
@@ -25,13 +27,13 @@ SendButton.addEventListener("click", (ev) => {
     }
     
     console.log(list)
-    const final = list[0] * list[1]
+    const final = list[0] * list[1] / 1000
 
     if (isNaN(final)){ 
         Product.innerHTML = `The carbon footprint was not found. <br>Check every field for any non-number characters. <br>Then, press "enter" after clicking on each of them.`
         return 
     }
-    Product.innerText = `The carbon footprint you're business has is ${final}`
+    Product.innerText = `The carbon footprint you're business has is ${final} tons, of CO2.`
 })
 
 inputObject.addEventListener("keypress", (ev) => {
@@ -40,6 +42,8 @@ inputObject.addEventListener("keypress", (ev) => {
 
     console.log(txt)
     Answers["input1"] = txt
+
+    inputted1.innerText = (txt? `Inputted! Its ${txt}`: "")
 })
 
 inputObject2.addEventListener("keypress", (ev) => {
@@ -55,4 +59,6 @@ inputObject2.addEventListener("keypress", (ev) => {
     console.log(txt)
     
     Answers["input2"] = txt
+
+    inputted2.innerText = (txt? `Inputted! Its ${txt}`: "")
 })
